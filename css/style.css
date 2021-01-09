@@ -31,7 +31,14 @@ main{
     width: 200px;
     margin-right: 20px;
 }
-
+.filled{
+    color:goldenrod;
+    font-size: 0.8em;
+}
+.unfilled{
+    color: lightgray;
+    font-size: 0.8em;
+}
 @media (max-width:992px){
     .top-players{
         grid-template-columns: repeat(2, 1fr);
