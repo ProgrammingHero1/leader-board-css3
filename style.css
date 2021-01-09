@@ -11,6 +11,7 @@ main{
     display: grid;
     grid-gap:30px;
     margin-top: 20px;
+    place-items: center;
 }
 .top-players{
     grid-template-columns: repeat(3, 1fr);
@@ -26,14 +27,24 @@ main{
     height: 50px;
     margin-right: 20px;
 }
+.thumbnail img{
+    width: 200px;
+    margin-right: 20px;
+}
 
 @media (max-width:992px){
     .top-players{
         grid-template-columns: repeat(2, 1fr);
     }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 @media (max-width:668px){
     .top-players{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        display: block;
     }
 }
